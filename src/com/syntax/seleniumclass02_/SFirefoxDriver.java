@@ -1,4 +1,4 @@
-package syntax.seleniumclass02_;
+package com.syntax.seleniumclass02_;
 
 public class SFirefoxDriver implements SWebDriver{
 	

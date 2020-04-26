@@ -1,10 +1,11 @@
-package syntax.seleniumclass02_;
+package com.syntax.seleniumclass02_;
 
 public class SChromeDriver implements SWebDriver{
 	
-	public SChromeDriver() {
+	public SChromeDriver() {//constructor
 		
-		System.err.println("Opening Chrome Browser....");
+		System.err.println("Opening Chrome Browser....");//--->Opening Chrome Browser....
+		                                                 //--->with red color because of the err
 	}
 
 	@Override

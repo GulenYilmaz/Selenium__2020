@@ -1,4 +1,4 @@
-package syntax.seleniumclass02_;
+package com.syntax.seleniumclass02_;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,20 +14,24 @@ public class Recap {
 		 * getTitle();
 		 */
 
-		String fbUrl="https://www.facebook.com";
+		
 		
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");//window users add .exe
 
 		WebDriver driver=new ChromeDriver();
 		
+		
+		String fbUrl="https://www.facebook.com";
 		driver.get(fbUrl);
 		
-		String url=driver.getCurrentUrl();
 		
+		
+		String url=driver.getCurrentUrl();
 		System.out.println("Current URL is: "+url);
 		
-		String title=driver.getTitle();
+	    
 		
+		String title=driver.getTitle();
 		System.out.println("Title of the page is: "+title);
 		
 		driver.close();
