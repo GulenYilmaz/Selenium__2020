@@ -10,19 +10,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Homework__Asel__inclass {
-	
+	public static WebDriver driver;
 	//public static WebDriver driver;
 
 	public static void main(String[] args) throws IOException, InterruptedException {
 		
-		String filePath=System.getProperty("user.dir")+"/configs/configuration.properties";
+		String filePath=System.getProperty("user.dir")+"\\configs\\configuration.properties";
 		FileInputStream fis=new FileInputStream(filePath);
 		
 		Properties prop=new Properties();
 		prop.load(fis);
 		String browser=prop.getProperty("browser");
 		
-		WebDriver driver=null;
+		
 		
 		switch(browser.toLowerCase()) {
 		
