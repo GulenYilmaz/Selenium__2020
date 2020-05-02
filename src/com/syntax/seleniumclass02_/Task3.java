@@ -9,7 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * 2.Navigate to “https://www.zillow.com/”
  * 3.Navigate to “https://www.google.com/”
  * 4.Navigate back to Zillow Page
- * 5.Refresh current page6.Verify url contains “Zillow”
+ * 5.Refresh current page
+ * 6.Verify url contains “Zillow”--->url i dogrularin
  */
 public class Task3 {
 
@@ -17,9 +18,16 @@ public class Task3 {
 		
 		System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
+		
 		driver.get("https://www.zillow.com");
+		driver.manage().window().maximize();
+		driver.navigate().refresh();
 		
+		driver.navigate().to("https://www.google.com");
+		driver.navigate().back();
+		driver.navigate().refresh();
 		
+		System.out.println(driver.getCurrentUrl());
 		
 	}
 }

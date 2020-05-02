@@ -9,8 +9,7 @@ public class CssSelectorDemo {
 	public static String url = "http://166.62.36.207/humanresources/symfony/web/index.php/dashboard";
 
 	public static void main(String[] args) throws InterruptedException {
-
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		

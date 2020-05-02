@@ -15,7 +15,7 @@ public class BrowserCommands {
 //		driver.get("https://www.facebook.com");//launch the url---> gitmak istedigimiz adresi yaziyoruz
 //		driver.navigate().to("https://www.google.com");
 //		driver.navigate().back();// go to one step back--->ayni sayfada iki tane web stesi acip sonra geri tusu ile geri gitmeyi yapmis oluyoruz
-//		driver.navigate().forward();--->refresh the page
+//		driver.navigate().forward();-->go to next the page
 		
 		driver.get("https://www.facebook.com");//launch the url---> gitmak istedigimiz adresi yaziyoruz
 		
@@ -28,11 +28,11 @@ public class BrowserCommands {
 		driver.navigate().to("https://www.google.com");//launch the url -->get() ile ayni sadece bir farki var
 		                                               //--->gitmek istedigimiz adresi yaizyoruz
 		
-		driver.navigate().back();// go to one step back
+		driver.navigate().back();// <--go to one step back
 		
 		Thread.sleep(3000);
 		
-		driver.navigate().forward();//bir onceki sayfaya tekrar donuyor
+		driver.navigate().forward();//-->bir onceki sayfaya tekrar donuyor
 		
 		driver.close();
 		

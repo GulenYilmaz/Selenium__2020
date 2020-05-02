@@ -13,23 +13,22 @@ public class WebElementC {
 	
 	public static void main(String[] args) throws InterruptedException {
 
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gulen\\eclipse-workspace\\Selenium__Basics__Classes\\drivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 		
 		WebElement userNam=driver.findElement(By.xpath("//input[contains(@id,'username')]"));
-		
 		userNam.sendKeys(userName);
-		Thread.sleep(1000);
+		Thread.sleep(1000);//--->we use for give a time
 		userNam.clear();
 		userNam.sendKeys(userName);
+		
 		WebElement pass=driver.findElement(By.cssSelector("input[name*='$password']"));
 		pass.clear();
 		Thread.sleep(1000);
 		pass.sendKeys(password);
 		
 		WebElement loginBtn=driver.findElement(By.cssSelector("input[value='Login']"));
-		
 		loginBtn.click();
 
 		boolean logoIsDisplayed=driver.findElement(By.xpath("//h1[text()='Web Orders']")).isDisplayed();

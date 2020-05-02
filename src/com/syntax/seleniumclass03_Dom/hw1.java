@@ -1,23 +1,28 @@
-package com.syntax.seleniumclass02_;
-/*
- * open chrome browser
- * go to "https://newtours.demoaut.com"
- * click on register link
- * fill out all required info
- * click submit
- * user successfully registered
- * create 2 scripts using different locators
- */
+package com.syntax.seleniumclass03_Dom;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Task1 {
+/* Using xPath ONLY
+TC 2: Mercury Tours Registration: 
+Open chrome browser
+Go to “http://newtours.demoaut.com/”
+Click on Register Link
+Fill out all required info (skip dropdowns)
+Click Submit
+User successfully registered*/
 
-	public static void main(String[] args) {
 
+public class hw1 {
+
+	
+	
+	public static String url="http://newtours.demoaut.com";
+
+	public static void main(String[] args) throws InterruptedException {
+	
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("http://newtours.demoaut.com/");// we will navigated and sent the element 
@@ -42,6 +47,5 @@ public class Task1 {
 		driver.findElement(By.xpath("//input[@name='register']")).click();
 		
 			
-	}
-
+}
 }
