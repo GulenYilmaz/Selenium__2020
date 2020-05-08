@@ -10,7 +10,7 @@ public class BaseClass {
     
     
     // main goal is this method into initialize our webdriver
-	public static void setUp() {
+	public static WebDriver setUp() {
 		
 		ConfigsReader.readProperties(Constants.CONFIGURATION_FILEPATH);
 		
@@ -30,6 +30,7 @@ public class BaseClass {
 		    	throw new RuntimeException("Browser is not supported");
 		}
 		driver.get(ConfigsReader.getProperty("url"));
+		return driver;
 		
 	}
 	public static void tearDown() {
