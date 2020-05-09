@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass05__DropDown;
+package com.syntax.seleniumclass05__DropDown__CreateJarFile;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

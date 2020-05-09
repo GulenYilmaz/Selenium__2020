@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass06_Alert_CrearteJarFile;
+package com.syntax.seleniumclass06_Alert_Frame;
 /*
  * Scenario 1: two independent frames : switch to frame 1 --> perform action --> 
  * switch to default content --> switch to frame 2 --> perform action 

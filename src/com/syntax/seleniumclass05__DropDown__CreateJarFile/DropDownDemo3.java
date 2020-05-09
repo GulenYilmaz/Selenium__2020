@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass05__DropDown;
+package com.syntax.seleniumclass05__DropDown__CreateJarFile;
 
 import java.util.ArrayList;
 import java.util.Iterator;

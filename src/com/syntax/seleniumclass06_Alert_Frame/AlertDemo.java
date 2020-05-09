@@ -1,17 +1,23 @@
-package com.syntax.seleniumclass06_Alert_CrearteJarFile;
+package com.syntax.seleniumclass06_Alert_Frame;
 //http://uitestpractice.com/Students/Switchto
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.syntax.utils.BaseClass;
 
 public class AlertDemo {
 
 	public static void main(String[] args) throws InterruptedException {
-
-		WebDriver driver = BaseClass.setUp();// Below code is for UItestPractice.com
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gulen\\eclipse-workspace\\Selenium__Basics__Classes\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+        
+		Thread.sleep(2000);
+		driver.get("http://uitestpractice.com/Students/Switchto");
 
 		driver.findElement(By.xpath("//button[@id='alert']")).click();
 

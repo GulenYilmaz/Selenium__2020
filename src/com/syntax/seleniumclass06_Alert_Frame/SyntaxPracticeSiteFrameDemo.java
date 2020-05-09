@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass06_Alert_CrearteJarFile;
+package com.syntax.seleniumclass06_Alert_Frame;
 //http://166.62.36.207/syntaxpractice/bootstrap-iframe.html
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
