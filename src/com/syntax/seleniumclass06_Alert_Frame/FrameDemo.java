@@ -9,15 +9,20 @@ perform action --> switch to child frame --> perform action
  */
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.syntax.utils.BaseClass;
 
-public class FrameDemo extends BaseClass{
+public class FrameDemo {
 
 	public static void main(String[] args) throws InterruptedException {
-
-		setUp();//please uncomment uitestpractice.com url.
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\gulen\\eclipse-workspace\\Selenium__Basics__Classes\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://uitestpractice.com/Students/Switchto");
+		
+	    //please uncomment uitestpractice.com url.
 		
 		String text=driver.findElement(By.xpath("//h3[text()='click on the below link: ']")).getText();
 		System.out.println(text);
@@ -54,7 +59,7 @@ public class FrameDemo extends BaseClass{
 		
 		
 		Thread.sleep(3000);
-		tearDown();
+		driver.quit();
 	}
 
 }
