@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass08__WebTables;
+package com.syntax.seleniumclass08__WebTablesHandle;
 /*
  * 1: Table headers and rows verification
 Open chrome browser
@@ -31,7 +31,7 @@ public class Task1 {
 	//driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	driver.findElement(By.className("dropdown-menu")).click();
 	
-	
+
 	}
 	
 }
