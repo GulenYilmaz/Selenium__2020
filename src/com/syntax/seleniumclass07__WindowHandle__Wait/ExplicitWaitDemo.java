@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass07__WindowHandle;
+package com.syntax.seleniumclass07__WindowHandle__Wait;
 
 //http://166.62.36.207/syntaxpractice/dynamic-data-loading-demo.html
 

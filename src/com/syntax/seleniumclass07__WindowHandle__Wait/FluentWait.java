@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass07__WindowHandle;
+package com.syntax.seleniumclass07__WindowHandle__Wait;
 //https://www.selenium.dev/documentation/en/webdriver/waits/
 
 /*In Fluent wait, you can customize the apply method 

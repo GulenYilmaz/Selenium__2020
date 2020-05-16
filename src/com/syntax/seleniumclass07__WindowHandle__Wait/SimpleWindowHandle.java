@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass07__WindowHandle;
+package com.syntax.seleniumclass07__WindowHandle__Wait;
 
 //https://accounts.google.com/signup
 

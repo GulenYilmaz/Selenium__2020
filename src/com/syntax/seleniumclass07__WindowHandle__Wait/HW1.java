@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass07__WindowHandle;
+package com.syntax.seleniumclass07__WindowHandle__Wait;
 /*
  * 1: Verify element is clickable
 Open chrome browser

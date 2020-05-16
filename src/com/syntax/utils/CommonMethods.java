@@ -80,4 +80,9 @@ public class CommonMethods extends BaseClass {
 			e.printStackTrace();
 		}
 	}
+
+	public static WebElement waitForClickability(WebElement findElement) {
+		// TODO Auto-generated method stub
+		return findElement;
+	}
 }

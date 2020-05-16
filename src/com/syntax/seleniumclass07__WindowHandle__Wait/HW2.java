@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass07__WindowHandle;
+package com.syntax.seleniumclass07__WindowHandle__Wait;
 /*
  * 2: Verify element is enabled
 Open chrome browser

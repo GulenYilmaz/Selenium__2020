@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.syntax.utils.BaseClass;
 
 public class DropDownDemo2 extends BaseClass {
-
+//url=https://demoqa.com/automation-practice-form/
 	public static void main(String[] args) throws InterruptedException {
 
 		setUp();

@@ -1,4 +1,4 @@
-package com.syntax.seleniumclass07__WindowHandle;
+package com.syntax.seleniumclass07__WindowHandle__Wait;
 /*
  * /*
  * public class SynchronizationExplanation extends MyBase{
