@@ -1,1 +1,0 @@
-package com.syntax.seleniumclass10__ScreenShot;
