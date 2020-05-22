@@ -3,6 +3,7 @@ package com.syntax.seleniumText__Asel__Sunday__2;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.syntax.seleniumText__Asel__Sunday__Pages.HrmsLoginPage__firstWay;
 import com.syntax.utils.CommonMethods;
 
 /*
@@ -17,7 +18,15 @@ Close the browser
  */
 public class Task1 extends CommonMethods {
 
-
-	
+    
+	public static void main(String[] args) {
+		
+		
+		 setUp();
+		 
+		 HrmsLoginPageElementTest__secondWay login= new HrmsLoginPageElementTest__secondWay();
+		 
+//		 isDisplayed(login.displayLogo);
+	}
 	
 }

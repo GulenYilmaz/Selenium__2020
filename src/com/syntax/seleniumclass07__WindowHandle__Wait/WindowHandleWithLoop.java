@@ -19,6 +19,7 @@ public class WindowHandleWithLoop {
 		
 		String singUpTitle=driver.getTitle();
 		System.out.println("Main Page Title is:: "+singUpTitle);
+		
 		String parentWindowHandle=driver.getWindowHandle();//grab the handle of parent window.
 		System.out.println("What is the Parent Window Handle? "+parentWindowHandle);
 		

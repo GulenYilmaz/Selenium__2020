@@ -1,6 +1,7 @@
 
 package com.syntax.seleniumclass10__ScreenShot__AdvancedXPath__Javascript__ActionsClass;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -35,7 +36,9 @@ public class ActionClassAmazonDemo {
 		
 		//how to double click on a element.
 		action.moveToElement(searchBox).click().sendKeys("Movies").doubleClick().perform();
-		//action.moveToElement(searchBox).click().keyUp(Keys.SHIFT).sendKeys("movie").perform();
+		action.moveToElement(searchBox).click().keyUp(Keys.SHIFT).sendKeys("movie").perform();
+		
+		
 		Thread.sleep(5000);
 		BaseClass.tearDown();
 		

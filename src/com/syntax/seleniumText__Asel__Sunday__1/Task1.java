@@ -8,8 +8,8 @@ import org.openqa.selenium.WebElement;
  * 
  * using functions only sign up to facebook account
  */
-public class Task1 {
-public static void main(String[] args) {
+//public class Task1 {
+//public static void main(String[] args) {
 //	WebElement username=driver.findElement(By.cssSelector("input#email"));
 //		
 //		sendText(username, ConfigsReader.getProperty("username"));
@@ -28,7 +28,7 @@ public static void main(String[] args) {
 //		ClickRadioOrCheckBox(gender,"2");
 //		Thread.sleep(2000);
 //		
-		//click on login
-		//close browser
-		//tearDown();
-	}}
+//		click on login
+//		close browser
+//		tearDown();
+//	}}

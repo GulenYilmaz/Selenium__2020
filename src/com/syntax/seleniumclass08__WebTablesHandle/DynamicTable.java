@@ -23,7 +23,7 @@ public class DynamicTable extends BaseClass {
 		//Find all rows of the table
 		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr"));
 
-		for (int i = 0; i < rows.size(); i++) {//loop over list  based on the size.
+		for (int i = 0; i < rows.size(); i++) {//loop over list  based on the size. the header is starts with inside the body
 			String rowText=rows.get(i+1).getText();//get text of list and skip first index(first row)
 			System.out.println(rowText);
 			

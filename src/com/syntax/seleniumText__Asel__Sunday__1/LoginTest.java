@@ -18,8 +18,10 @@ public class LoginTest extends CommonMethods{
 		setUp();
 		
 		//sending username
+		String text= ConfigsReader.getProperty("username");
+		
 		WebElement username=driver.findElement(By.id("txtUsername"));
-		sendText(username, ConfigsReader.getProperty("username"));
+		sendText(username, ConfigsReader.getProperty("username"));// my username comes from property file
 		
 		//sending password
 		WebElement password=driver.findElement(By.id("txtPassword"));

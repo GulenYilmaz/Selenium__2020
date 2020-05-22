@@ -1,11 +1,10 @@
-package com.syntax.seleniumText__Asel__Sunday__2;
-
+package com.syntax.seleniumText__Asel__Sunday__Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.syntax.utils.CommonMethods;
 
-public class LoginPageTest extends CommonMethods{
+public class HrmsLoginPage__firstWay extends CommonMethods{
 
 	public WebElement username=driver.findElement(By.id("txtUsername"));
 	

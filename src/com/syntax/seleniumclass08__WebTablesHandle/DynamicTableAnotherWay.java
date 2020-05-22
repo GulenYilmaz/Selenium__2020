@@ -24,12 +24,12 @@ public class DynamicTableAnotherWay extends BaseClass {
 
 		for (int i = 1; i < rows.size(); i++) {
 
-			String rowText=rows.get(i-1).getText();//get text of each row excluding header.
+			String rowText=rows.get(i-1).getText();//get text of each row excluding header.the header is starts with inside the body
 			
 			if(rowText.contains(expectValue)) {//validating expected Value
 				//loop through each row by providing the index in the xpath and click on it.
 				driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']/tbody/tr["+i+"]/td[1]")).click();;
-				break;
+				break;                                                                      // 
 			}	
 		}
 

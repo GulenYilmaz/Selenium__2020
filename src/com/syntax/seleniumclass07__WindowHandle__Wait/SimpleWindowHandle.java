@@ -12,7 +12,7 @@ public class SimpleWindowHandle {
 
 	public static void main(String[] args) {
 
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://accounts.google.com/signup");
 		
@@ -48,5 +48,23 @@ public class SimpleWindowHandle {
 		driver.close();
 
 	}
+/*
+ * each time it gives us a different -->ID
+ * Main Page Title is:: Create your Google Account
+Number of windows opened are:: 2
+Id of Main window:: CDwindow-8EF14AE61E41C520CE2B1805E2680FD6
+Id of Child window:: CDwindow-737476EB2D0A97889D09E8AA15AC8C3A
+Child Page Title is:: Google Account Help
 
+
+
+
+Main Page Title is:: Create your Google Account
+Number of windows opened are:: 2
+Id of Main window:: CDwindow-DA2DD039F49F56E1ED07B8AC97861AED
+Id of Child window:: CDwindow-0D40EEFEAC3C8E0DA1DFCA8EE05ABD9C
+Child Page Title is:: Google Account Help
+ * 
+ */
 }
+

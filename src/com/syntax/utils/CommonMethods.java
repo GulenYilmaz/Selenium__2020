@@ -224,6 +224,24 @@ public class CommonMethods extends BaseClass {
 		getJSObject().executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/**
 	 * Method that will scroll the page down based on the passed pixel parameters
 	 * 
@@ -243,6 +261,19 @@ public class CommonMethods extends BaseClass {
 	}
 
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static void wait(int second) {
 		try {
 			Thread.sleep(second * 1000);
@@ -250,4 +281,62 @@ public class CommonMethods extends BaseClass {
 			e.printStackTrace();
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void isDisplayed(WebElement element) {
+		boolean displayText=element.isDisplayed();
+		String text=element.getText();
+		if(displayText) {
+			System.out.println(text+" is display. test pass");	
+	    }else {
+	    	System.out.println(text+" is not display. test fail");
+	    	}
+	    }
+	
+	
+	
+	
+	public static void selectCalendarDate(List<WebElement>element,String text) {
+		for(WebElement pickDate:element) {
+			if(pickDate.isEnabled()) {
+				if(pickDate.getText().equals(text)) {
+					pickDate.click();
+					break;
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

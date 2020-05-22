@@ -12,9 +12,9 @@ public class TableDemo {
 
 	public static void main(String[] args) {
 
-		System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "true");
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
-		WebDriver driver = new ChromeDriver();
+		System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
 		driver.get("http://166.62.36.207/syntaxpractice/table-search-filter-demo.html");
 
 		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='task-table']/tbody/tr"));

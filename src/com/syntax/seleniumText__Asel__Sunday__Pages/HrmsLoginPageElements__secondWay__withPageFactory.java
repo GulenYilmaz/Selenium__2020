@@ -1,4 +1,4 @@
-package com.syntax.seleniumText__Asel__Sunday__2;
+package com.syntax.seleniumText__Asel__Sunday__Pages;
 
 
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.syntax.utils.BaseClass;
 
-public class LoginPageElements {
+public class HrmsLoginPageElements__secondWay__withPageFactory {
 
 	@FindBy(id="txtUsername")
 	public WebElement username;
@@ -21,7 +21,7 @@ public class LoginPageElements {
 	@FindBy(xpath="//div[@id='divLogo']/img")
 	public WebElement logo;
 	
-	public LoginPageElements() {
+	public HrmsLoginPageElements__secondWay__withPageFactory() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
 }
