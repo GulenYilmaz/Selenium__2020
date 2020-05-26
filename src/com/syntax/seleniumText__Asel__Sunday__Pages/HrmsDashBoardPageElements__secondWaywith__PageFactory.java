@@ -6,12 +6,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.syntax.utils.BaseClass;
 
-public class DashBoardPageElements {
+public class HrmsDashBoardPageElements__secondWaywith__PageFactory {
 
 	@FindBy(id="welcome")
 	public WebElement welcome;
 	
-	public DashBoardPageElements() {
-		PageFactory.initElements(BaseClass.driver, this);
+	public HrmsDashBoardPageElements__secondWaywith__PageFactory() {
+		PageFactory.initElements(BaseClass.driver, this);//drivers comes from Base class
 	}
 }

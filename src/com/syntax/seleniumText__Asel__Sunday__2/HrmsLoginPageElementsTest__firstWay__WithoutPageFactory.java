@@ -1,17 +1,16 @@
 package com.syntax.seleniumText__Asel__Sunday__2;
 
-
-import com.syntax.seleniumText__Asel__Sunday__Pages.HrmsLoginPage__firstWay;
+import com.syntax.seleniumText__Asel__Sunday__Pages.HrmmsLoginPageElements__firstWay__WithoutPageFactory;
 import com.syntax.utils.CommonMethods;
 import com.syntax.utils.ConfigsReader;
 
-public class HrmsLoginPageTest__firstWay extends CommonMethods{
+public class HrmsLoginPageElementsTest__firstWay__WithoutPageFactory extends CommonMethods{
 
 	public static void main(String[] args) {
 		
 		setUp();
 		
-		HrmsLoginPage__firstWay login=new HrmsLoginPage__firstWay();
+		HrmmsLoginPageElements__firstWay__WithoutPageFactory login=new HrmmsLoginPageElements__firstWay__WithoutPageFactory();
 		
 		sendText(login.username, ConfigsReader.getProperty("username"));
 		

@@ -1,6 +1,5 @@
 package com.syntax.seleniumText__Asel__Sunday__2;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

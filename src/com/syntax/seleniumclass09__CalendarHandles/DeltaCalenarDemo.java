@@ -22,9 +22,12 @@ public class DeltaCalenarDemo extends BaseClass {
 		while (!dMonth.equals("August")) {
 			driver.findElement(By.xpath("//span[text()='Next']")).click();
 			Thread.sleep(2000);
+		
+			
 			dMonth = driver.findElement(By.xpath("//span[@class='dl-datepicker-month-0']")).getText();
+			//tikladiktan sonra tekrar month texti almak icin
+		
 		}
-
 		
 		List<WebElement> departCells = driver.findElements(By.xpath("//tbody[@class='dl-datepicker-tbody-0']/tr/td"));
 		// loop through td of depart calendar and grab the text and validate
